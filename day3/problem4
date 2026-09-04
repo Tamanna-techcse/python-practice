@@ -1,0 +1,8 @@
+ function for palindrome 
+
+def is_palindrome(text) :
+    if(text == rev_text) :
+        answer = print(f"'{text}' is a palindrome")
+return answer
+text = input("Enter your word or phase here :\n")
+
