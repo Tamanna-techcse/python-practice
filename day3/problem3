@@ -1,0 +1,9 @@
+# reusable vowel count function
+
+vowels = ['a' , 'e' , 'i' , 'o' , 'u']
+def vowel_count(word):
+    text = word.lower()
+    nvowel = [x for x in text if x in vowels]
+    print(nvowel)
+    print("counts =", len(nvowel))
+vowel_count("Eagel")

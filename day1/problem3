@@ -1,0 +1,18 @@
+# count the number of vowels in a word
+vowels = ["a" , "e" , "i" , "o" , "u"]
+print(f"The vowels can be {vowels}")
+input_word = input("Enter your word here \n")
+word = input_word.lower()
+#print(word)
+count = 0
+for x in word :
+    if x in vowels :
+        count += 1
+print("Total number of vowels in the word are :" , count)
+
+
+# def vowel_count(word):
+#     nvowel = [x for x in word if x in vowels]
+#     print(nvowel)
+#     print("counts =", len(nvowel))
+# vowel_count("welcome")

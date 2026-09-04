@@ -1,0 +1,15 @@
+# reusable largest number function
+
+def find_largest(numbers) :
+    if isinstance(numbers , str) :
+        nums = list(map(int, numbers.split()))
+    else :
+        nums = list(map(int , numbers))
+    if not nums :
+        raise ValueError("invalid syntax provide valid input")
+    largest = nums[0]
+    for num in nums:
+        if num > largest:
+            largest = num
+    return largest
+print(find_largest("12 23 24 13 1 14 25"))

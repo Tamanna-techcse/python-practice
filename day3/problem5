@@ -1,0 +1,66 @@
+# the together(problem 1 o 4)
+
+words = input("enter the word to count the vowels :\n")
+vowels = ['a' , 'e' , 'i' , 'o' , 'u']
+def vowel_count(word):
+    text = word.lower()
+    nvowel = [x for x in text if x in vowels]
+    print(f"list of vowels present in the word {words} is :" , nvowel)
+    print(f"total vowels in the word {words} are =", len(nvowel))
+vowel_count(words)
+print()
+
+numbers = list(map(int, input("enter the list of numbers seperaed by spaces :\n").split()))
+#numbers = list(input("enter the list of numbers seperaed by spaces :\n"))
+def is_even(n) :
+    return n % 2 == 0
+for n in numbers :
+        print(is_even(n) , f"the number {n} is even" if is_even(n) else f"the number {n} is odd")
+print()
+
+
+def find_largest(numbers) :
+    if isinstance(numbers , str) :
+        nums = list(map(int, numbers.split()))
+    else :
+        nums = list(map(int , numbers))
+    if not nums :
+        raise ValueError("invalid syntax provide valid input")
+    largest = nums[0]
+    for num in nums:
+        if num > largest:
+            largest = num
+    return largest
+print("The largest number among the provided numbers is =", find_largest(numbers))
+print()
+
+
+def find_smallest(numbers) :
+    if isinstance(numbers , str) :
+        nums = list(map(int, numbers.split()))
+    else :
+        nums = list(map(int , numbers))
+    if not nums :
+        raise ValueError("invalid syntax provide valid input")
+    smallest = nums[0]
+    for num in nums:
+        if num < smallest :
+            smallest = num
+    return smallest
+print("The smallest number among the provided numbers is =", find_smallest(numbers))
+print()
+
+
+text = input("enter the phase or word : ")
+str = "".join(char for char in text if char.isalnum())
+#print(str)
+def is_palindrome(str) :
+    rev_str = str[::-1]
+    lower_str = rev_str.lower()
+    print("Reversed form is" , lower_str)
+    if(lower_str == str.lower()) :
+        print(f"Yess , '{text}' is a palindrome")
+    else :
+        print(f"Noo , '{text}' is not a palindrome")
+is_palindrome(text)
+print()

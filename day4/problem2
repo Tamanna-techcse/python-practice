@@ -1,0 +1,9 @@
+# list reversing function
+
+def reverse_list(lst):
+    return lst[::-1]
+try:
+    lst = list(map(int, input("Enter numbers separated by space: ").split()))
+    print("Reversed list is:", reverse_list(lst))
+except ValueError:
+    print("Wrong input !!\nPlease provide a valid input")

@@ -1,0 +1,12 @@
+# check whether a string is palindrome or not
+text = input("enter the phase or word : ")
+str = "".join(char for char in text if char.isalnum())
+#print(str)
+rev_str = str[::-1]
+lower_str = rev_str.lower()
+print("Reversed form is" , lower_str)
+if(lower_str == str.lower()) :
+    print(f"Yess , '{text}' is a palindrome")
+else :
+    print(f"Noo , '{text}' is not a palindrome")
+
