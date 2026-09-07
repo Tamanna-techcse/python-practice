@@ -1,0 +1,15 @@
+#occurrence count function
+nums = ([int(x) for x in input("Enter the numbers seperated by spaces :").split()])
+print(nums)
+def count_occurrences(nums , target) :
+    count = 0
+    for item in nums :
+        if item == target :
+            count += 1
+    return count
+#lst = list(map(int, input("Enter numbers separated by space: ").split()))
+target = int(input("Enter the number to count: "))
+
+#print(count_occurrences(nums), f"'{nums}' has {count_occurrences(nums)} occurrences of '{x}'")
+#print(count_occurrences(lst, target), f"'{lst}' has {count_occurrences(lst, target)} occurrences of '{target}'")
+print(f"{nums} has {count_occurrences(nums, target)} occurrences of '{target}'")

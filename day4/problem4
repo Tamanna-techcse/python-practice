@@ -1,0 +1,12 @@
+#all terms occurrences count
+
+numbers = ([int(x) for x in input("Enter the numbers seperated by spaces :").split()])
+numbers.sort()
+
+current_count = 1
+for i in range(len(numbers)):
+    if i == len(numbers) - 1 or numbers[i] != numbers[i + 1]:
+        print(f"Number {numbers[i]} occurs {current_count} times")
+        current_count = 1  # Reset the counter for the next unique number
+    else:
+        current_count += 1 
