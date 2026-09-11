@@ -1,0 +1,42 @@
+# multiple string operations
+exp_string = "Here are the various operations You should know as a Beginner to be performed on strings."
+
+
+# length of a string includes every space , symbol , number and letter as individual characters and the numbering begins as from 0
+
+length = len(exp_string)
+print(f"Length of the string: {length}\n")
+
+
+# characters at specific index or location can be printed as follows
+
+print(f"First character of string : {exp_string[0]}\n")
+print(f"Last character of string : {exp_string[-1]}\n")
+
+
+# slicing of string can be done as follows or say range of characters can be printed as follows (Last index is not included in the output)
+
+print(f"Characters from index 25 to 47 : {exp_string[25:47]}\n") 
+print(f"First 10 characters of string : {exp_string[:10]}\n")
+
+
+# changing the character case or converting small letters to capital letters and vice versa can be done as follows
+
+up_string = exp_string.upper()
+low_string = exp_string.lower()
+print(f"String in uppercase : {up_string}\n")
+print(f"String in lowercase : {low_string}\n")
+
+
+# replacing a specific character or word with another character or word can be done as follows
+
+print(f"String after replacing 'operations' with 'functions' : {exp_string.replace('operations', 'functions')}\n")
+
+
+# checking if a specific substring is present in the string
+
+if "operations" in exp_string:
+    print("Substring 'operations' is present in the string.")
+if not "games" in exp_string:
+    print("Substring 'games' is not present in the string.")
+
